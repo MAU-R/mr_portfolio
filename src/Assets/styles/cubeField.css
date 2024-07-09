@@ -1,0 +1,7 @@
+.main-canvas{
+    height: 150vh;
+    width: 100vw;
+    overflow: hidden;
+    z-index: 999999;
+    position: absolute;
+}

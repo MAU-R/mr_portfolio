@@ -1,0 +1,90 @@
+
+:root {
+    --color-primary: #1F108E;
+    --color-primary-lightest: #645AA9;
+    --color-primary-lighter: #3D319E;
+    --color-primary-light: #2C2076;
+    --color-primary-dark: #18115F;
+    --color-primary-darker: #100B49;
+    --color-primary-darkest: #000528;
+  
+    --color-accent: #AD004C;
+    --color-accent-lightest: #E04674;
+    --color-accent-lighter: #DC1F5B;
+    --color-accent-light: #A9003C;
+    --color-accent-dark: #860032;
+    --color-accent-darker: #6B0029;
+    --color-accent-darkest: #560024;
+  
+    --color-adjacent1: #008B8B;
+    --color-adjacent1-lightest: #56B9B9;
+    --color-adjacent1-lighter: #2F9F9F;
+    --color-adjacent1-light: #1F7D7D;
+    --color-adjacent1-dark: #006D6D;
+    --color-adjacent1-darker: #005555;
+    --color-adjacent1-darkest: #004040;
+  
+    --color-adjacent2: #800080;
+    --color-adjacent2-lightest: #A93DBD;
+    --color-adjacent2-lighter: #9B24B3;
+    --color-adjacent2-light: #7B1F8F;
+    --color-adjacent2-dark: #5C156F;
+    --color-adjacent2-darker: #4C114F;
+    --color-adjacent2-darkest: #330033;
+
+    --color-gray-lightest: #F2F2F2;
+    --color-gray-lighter: #E6E6E6;
+    --color-gray-light: #CCCCCC;
+    --color-gray: #999999;
+    --color-gray-dark: #666666;
+    --color-gray-darker: #333333;
+    --color-gray-darkest: #1A1A1A;
+    --color-gray-extra-dark: #0D0D0D;
+
+    /* Escala de grises */
+  --color-gray-lightest: #F2F2F2;
+  --color-gray-lighter: #E6E6E6;
+  --color-gray-light: #CCCCCC;
+  --color-gray: #999999;
+  --color-gray-dark: #666666;
+  --color-gray-darker: #333333;
+  --color-gray-darkest: #1A1A1A;
+
+  /* Fondos y texto */
+  --color-background: var(--color-gray-lightest); /* Fondo principal */
+  --color-text: var(--color-gray-darkest); /* Texto principal */
+  --color-text-light: var(--color-gray-light); /* Texto secundario */
+
+  /* Fondos destacados */
+  --color-background-primary: var(--color-primary); /* Fondo de secciones principales */
+  --color-background-accent: var(--color-accent); /* Fondo de elementos de acento */
+  --color-background-adjacent1: var(--color-adjacent1); /* Fondo de secciones secundarias */
+  --color-background-adjacent2: var(--color-adjacent2); /* Fondo de secciones terciarias */
+
+  /* Texto sobre fondos */
+  --color-text-on-primary: var(--color-text-light); /* Texto sobre fondo primario */
+  --color-text-on-accent: var(--color-neutral-light); /* Texto sobre fondo de acento */
+  --color-text-on-adjacent1: var(--color-neutral-light); /* Texto sobre fondo de sección secundaria */
+  --color-text-on-adjacent2: var(--color-neutral-light); /* Texto sobre fondo de sección terciaria */
+
+    /* Variables base */
+    --base-unit: 4px; /* Tamaño base de la escala */
+    --base-font-size: 16px; /* Tamaño de fuente base */
+    --line-height: 1.6; /* Altura de línea base */
+  
+    /* Variables para tamaños de fuente */
+    --font-size-small: calc(var(--base-font-size) * 0.75); /* 12px */
+    --font-size-medium: calc(var(--base-font-size) * 1); /* 16px */
+    --font-size-large: calc(var(--base-font-size) * 1.25); /* 20px */
+    --font-size-xl: calc(var(--base-font-size) * 1.5); /* 24px */
+    --font-size-xxl: calc(var(--base-font-size) * 1.75); /* 28px */
+  
+    /* Variables para espacios */
+    --spacing-xs: calc(var(--base-unit) * 4); /* 16px */
+    --spacing-sm: calc(var(--base-unit) * 8); /* 32px */
+    --spacing-md: calc(var(--base-unit) * 12); /* 48px */
+    --spacing-lg: calc(var(--base-unit) * 16); /* 64px */
+    --spacing-xl: calc(var(--base-unit) * 24); /* 96px */
+    --spacing-xxl: calc(var(--base-unit) * 32); /* 128px */
+
+}
