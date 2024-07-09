@@ -14,9 +14,8 @@ const fbm = new FBM({
   height: 0.0,
 });
 
-const CubesField = ({scroll}) => {
-  console.log("Scroll::", scroll)
-  console.log("Aqui andamos con la altura: ",window.innerHeight)
+const CubesField = ({scroll, cameraPosition}) => {
+
   const [activeCubes, setActiveCubes] = useState([]);
   const cubes = [];
   const totalCubes = 20 * 20; // 400 cubos
@@ -54,7 +53,7 @@ const CubesField = ({scroll}) => {
       const height = fbm.get2(pos);
       const isActive = activeCubes.includes(cubeIndex);
       cubes.push(
-        <Cube key={`${x}-${z}`} position={[x * 1.1, height * 3, z * 1.1]} isActive={isActive} scroll={scroll}/>
+        <Cube key={`${x}-${z}`} position={[x * 1.1, height * 3, z * 1.1]} isActive={isActive} scroll={scroll} cameraPosition={cameraPosition}/>
       );
       cubeIndex++;
     }
