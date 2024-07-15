@@ -29,10 +29,10 @@ const CubeWorld = () => {
    
     <div className='main-canvas'>
     <Canvas  camera={{ position: cameraPosition.toArray(), rotation:[-0.43,0,0]}}>
-      <ambientLight intensity={0.5} />
-      <pointLight position={[1, 2, 1]} intensity={15} />
-      <pointLight position={[1, 2, 8]} intensity={15} />
-      <pointLight position={[1, 2, -8]} intensity={15} />
+      <ambientLight intensity={0.8} />
+      <pointLight position={[1, 2, 1]} intensity={30} />
+      <pointLight position={[1, 2, 8]} intensity={30} />
+      <pointLight position={[1, 2, -8]} intensity={30} />
       <CubesField scroll={scroll} cameraPosition={cameraPosition} />
 
     </Canvas>

@@ -78,6 +78,8 @@
     --font-size-large: calc(var(--base-font-size) * 1.25); /* 20px */
     --font-size-xl: calc(var(--base-font-size) * 1.5); /* 24px */
     --font-size-xxl: calc(var(--base-font-size) * 1.75); /* 28px */
+    --font-size-xxxl: calc(var(--base-font-size) * 2); /* 28px */
+    --font-size-xxxxl: calc(var(--base-font-size) * 2.25); /* 28px */
   
     /* Variables para espacios */
     --spacing-xs: calc(var(--base-unit) * 4); /* 16px */

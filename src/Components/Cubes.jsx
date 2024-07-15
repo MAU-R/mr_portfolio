@@ -14,7 +14,7 @@ const Cube = ({ position, isActive, scroll, cameraPosition}) => {
         const cycleTime = (elapsedTime + offset) % cycleDuration;
         ref.current.position.y = position[1] + Math.sin(cycleTime)*0.3;
       } else {
-        ref.current.position.y = position[1];
+        ref.current.position.y = position[1]
       }
       const x=ref.current.position.x >=0 ? ref.current.position.x*-1 :ref.current.position.x;
      
@@ -25,7 +25,7 @@ const Cube = ({ position, isActive, scroll, cameraPosition}) => {
 
 
       if(scroll>(window.innerHeight*0.05))
-      ref.current.position.y -= (scroll-(window.innerHeight*0.05)) * 0.0009 * Math.exp(distance/1.3);
+      ref.current.position.y -= (scroll-(window.innerHeight*0.05)) * 0.0009 * Math.exp(distance/3);
 
       ref.current.material.opacity = Math.max(1 - (scroll) * 0.0005, 0);
       ref.current.material.transparent = true;
